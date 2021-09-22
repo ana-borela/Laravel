@@ -20,20 +20,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::namespace('site')->group(function() {
-    Route::get('/', [HomeControllers::class, 'index']);
+    Route::get('/', [HomeControllers::class, 'index'])->name('site.home');
 
 
     // Categoria de produtos
-    Route::get('/produtos', [CategoryControllers::class, 'index']);
-    Route::get('/produtos/{slug}', [CategoryControllers::class, 'show']);
+    Route::get('/produtos', [CategoryControllers::class, 'index'])->name('site.products');
+    Route::get('/produtos/{slug}', [CategoryControllers::class, 'show'])->name('site.products.category');
 
     // Blog
-    Route::get('blog', [BlogControllers::class, 'index']);
+    Route::get('blog', [BlogControllers::class, 'index'])->name('site.blog');
 
     // Sobre
-    Route::get('sobre', [AboutControllers::class, 'index']);
+    Route::get('sobre', [AboutControllers::class, 'index'])->name('site.about');
 
     //Contato
-    Route::get('contato', [ContactControllers::class, 'index']);
-    Route::post('contato', [ContactControllers::class, 'form']);
+    Route::get('contato', [ContactControllers::class, 'index'])->name('site.contact');
+    Route::post('contato', [ContactControllers::class, 'form'])->name('site.contact.form');
 });
