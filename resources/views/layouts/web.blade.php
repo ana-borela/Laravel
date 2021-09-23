@@ -63,14 +63,18 @@
     </header>
     
     <main>
-        @yield('content')
+        <div class="container" id="home">
+            <div class="row">
+                @yield('content')
+            </div>
+        </div>
     </main>
 
     <!--Footer-->
     <div class="footer container-fluid">
-        <footer class="row row-cols-5 py-5 my-5 border-top">
-            <div class="col-md-3 text-center">
-                <p class="">&copy; 2021</p>
+        <footer class="row row-cols-5 py-5 border-top">
+            <div class="col-md-3">
+                <p class="text-center pt-5">&copy; 2021</p>
             </div>
 
             <div class="col-md-3 text-center">
