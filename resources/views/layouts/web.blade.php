@@ -26,18 +26,23 @@
 
     <header>
         <!--NavBar-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning rounded" aria-label="Twelfth navbar example">
+        <nav class="navbar navbar-expand-lg navbar-light rounded" aria-label="Twelfth navbar example">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10"
                     aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img class="img-fluid" src="{{ asset('images/logo.png') }}" alt="Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse justify-content-md-end" id="navbarsExample10">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="{{ route('site.home') }}">Página
-                                principal</a>
+                            <a class="nav-link" aria-current="page" href="{{ route('site.home') }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('site.products') }}">Produtos</a>
@@ -55,7 +60,6 @@
                 </div>
             </div>
         </nav>
-
     </header>
     
     <main>
@@ -63,7 +67,7 @@
     </main>
 
     <!--Footer-->
-    <div class="container-fluid bg-warning">
+    <div class="footer container-fluid">
         <footer class="row row-cols-5 py-5 my-5 border-top">
             <div class="col-md-3 text-center">
                 <p class="">&copy; 2021</p>
