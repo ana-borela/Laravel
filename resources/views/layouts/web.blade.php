@@ -70,7 +70,7 @@
         </div>
     </main>
 
-    <!--Footer-->
+    <!--Footer
     <div class="footer container-fluid">
         <footer class="row row-cols-5 py-5 border-top">
             <div class="col-md-3">
@@ -110,8 +110,8 @@
                 </ul>
             </div>
         </footer>
-    </div>
-
+    </div>-->
+    <script src="{{ asset('js/web.js') }}" type="text/javascript"></script>
 </body>
 
 </html>
